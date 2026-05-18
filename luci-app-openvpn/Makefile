@@ -13,6 +13,7 @@ PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=Steven Barth <steven@midlink.org>, \
 	Jo-Philipp Wich <jo@mein.io>
 
-include ../../luci.mk
+# include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
