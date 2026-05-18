@@ -6,12 +6,11 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI Support for OpenVPN
-LUCI_DEPENDS:=+luci-base +luci-compat
+PKG_NAME:=luci-app-openvpn
+PKG_VERSION:=1.0
 
-PKG_LICENSE:=Apache-2.0
-PKG_MAINTAINER:=Steven Barth <steven@midlink.org>, \
-	Jo-Philipp Wich <jo@mein.io>
+LUCI_TITLE:=LuCI Support for OpenVPN
+LUCI_DEPENDS:=+luci-base +luci-compat +openvpn-openssl
 
 # include ../../luci.mk
 include $(TOPDIR)/feeds/luci/luci.mk
